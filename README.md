@@ -53,3 +53,5 @@ The initial data quality assessment identified the following issues:
 
 ## **Business Question**
 ### **How does On-Time Delivery (OTD) performance vary across warehouses and order sizes?**
+
+## **EDA and Baseline KPIs**
