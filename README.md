@@ -55,3 +55,5 @@ The initial data quality assessment identified the following issues:
 ### **How does On-Time Delivery (OTD) performance vary across warehouses and order sizes?**
 
 ## **EDA and Baseline KPIs**
+The cleaned dataset contains **2,991 unique orders** processed across **5 warehouses**. This provides the baseline scope for the analysis after excluding records affected by the identified data quality issues.<br>
+[orders_distrivution_by_warehouse](./charts/orders_distrivution_by_warehouse.png)
