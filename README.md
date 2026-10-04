@@ -52,8 +52,9 @@ The initial data quality assessment identified the following issues:
 **Rows affected by the identified data quality issues will be excluded from the analytical dataset rather than modifying or imputing their values. The original dataset will be preserved, while the cleaned dataset will be used for subsequent EDA and analysis.**
 
 ## **Business Question**
-### **How does On-Time Delivery (OTD) performance vary across warehouses and order sizes?**
+> ### **How does On-Time Delivery (OTD) performance vary across warehouses and order sizes?**
 
 ## **EDA and Baseline KPIs**
 The cleaned dataset contains **2,991 unique orders** processed across **5 warehouses**. This provides the baseline scope for the analysis after excluding records affected by the identified data quality issues.<br>
-[orders_distrivution_by_warehouse](./charts/orders_distrivution_by_warehouse.png)
+
+![orders_distribution_by_warehouse](./charts/orders_distrivution_by_warehouse.png)
