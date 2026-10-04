@@ -58,3 +58,7 @@ The initial data quality assessment identified the following issues:
 The cleaned dataset contains **2,991 unique orders** processed across **5 warehouses**. This provides the baseline scope for the analysis after excluding records affected by the identified data quality issues.<br>
 
 ![orders_distribution_by_warehouse](./charts/orders_distrivution_by_warehouse.png)
+- Order volume is unevenly distributed across warehouses. **WH_E** handles the highest number of orders with **1,055 orders**, followed by **WH_D** (**734**), **WH_C** (**582**), **WH_B** (**359**), and **WH_A** (**261**). This indicates substantial differences in warehouse workload, which should be considered when comparing delivery performance.
+
+![orders_distribution_by_delivery_status](./charts/orders_distribution_by_delivery_status.png)
+- Overall delivery status shows that **2,143 orders (71.65%)** were delivered **On-Time**, while **848 orders (28.35%)** were *Late*. This provides an initial baseline for delivery performance and establishes the basis for calculating and comparing OTD across warehouses and order sizes.
