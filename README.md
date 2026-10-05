@@ -66,3 +66,19 @@ The cleaned dataset contains **2,991 unique orders** processed across **5 wareho
 ## **Analysis**
 ![otd_by_warehouse](./charts/otd_by_warehouse2.png)
 - **The overall On-Time Delivery (OTD) rate is 71.64%**, meaning that approximately seven out of every ten orders were delivered within the expected delivery date. However, warehouse-level performance shows substantial variation, with OTD rates ranging from **60.00% at WH_E to 92.72% at WH_A**. The most notable finding is **WH_E**, which handles the **highest order volume** in the dataset with **1,055 orders**, yet records **the lowest OTD rate at 60.00%**, while **WH_A handles only 261 orders** but achieves **the highest OTD rate at 92.72%**. This indicates that higher order volume does not necessarily translate into better delivery performance and that WH_E's large operational workload may be associated with a greater proportion of late deliveries. Since WH_E accounts for a significant share of total orders, its relatively poor performance also has a strong influence on the overall OTD rate, making warehouse-level analysis essential for understanding the drivers behind the overall delivery performance.
+
+![otd_by_order_size](./charts/otd_by_order_size.png)
+- **OTD performance declines consistently as order size increases**. **Small orders** achieve the highest OTD rate at **86.14%**, while **Very Large** orders record the lowest at **60.66%**, with **Medium and Large** orders falling between them at **72.93% and 65.82%**, respectively. This represents a 25.48 percentage-point difference between Small and Very Large orders, indicating a clear association between larger order sizes and lower On-Time Delivery performance.
+
+## **Conclusion**
+**WH_E handles the highest order volume and has the largest average order size among all warehouses, while also recording the lowest OTD rate. Across the overall dataset, larger orders are consistently associated with lower OTD performance, suggesting that the combination of high order volume and larger order sizes may be contributing to WH_E's weaker delivery performance.**
+
+## **Recommendations**
+Based on the analysis, **WH_E** should be prioritized for further operational review due to **its combination of the highest order volume, largest average order size, and lowest OTD rate**. The operation should also investigate whether larger orders require different fulfillment or delivery handling, given the consistent decline in OTD as order size increases. Finally, capacity and fulfillment processes at high-volume warehouses should be reviewed to determine whether the combination of workload and order complexity is contributing to lower delivery performance.
+
+## **Tools Used**
+- **`Python`**: Data analysis and exploratory analysis
+- **`Pandas`**:  Data cleaning, transformation, segmentation, and KPI calculations
+- **`Jupyter Notebook`**: Analysis workflow and documentation
+- **`Microsoft PowerPoint`**: Data visualization and presentation
+- **`Git / GitHub`**: Project version control and repository management
