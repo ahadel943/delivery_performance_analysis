@@ -62,3 +62,7 @@ The cleaned dataset contains **2,991 unique orders** processed across **5 wareho
 
 ![orders_distribution_by_delivery_status](./charts/orders_distribution_by_delivery_status.png)
 - Overall delivery status shows that **2,143 orders (71.65%)** were delivered **On-Time**, while **848 orders (28.35%)** were *Late*. This provides an initial baseline for delivery performance and establishes the basis for calculating and comparing OTD across warehouses and order sizes.
+
+## **Analysis**
+![otd_by_warehouse](./charts/otd_by_warehouse.png)
+- **The overall On-Time Delivery (OTD) rate is 71.64%**, meaning that approximately seven out of every ten orders were delivered within the expected delivery date. However, warehouse-level performance shows substantial variation, with OTD rates ranging from **60.00% at WH_E to 92.72% at WH_A**. The most notable finding is **WH_E**, which handles the **highest order volume** in the dataset with **1,055 orders**, yet records **the lowest OTD rate at 60.00%**, while **WH_A handles only 261 orders** but achieves **the highest OTD rate at 92.72%**. This indicates that higher order volume does not necessarily translate into better delivery performance and that WH_E's large operational workload may be associated with a greater proportion of late deliveries. Since WH_E accounts for a significant share of total orders, its relatively poor performance also has a strong influence on the overall OTD rate, making warehouse-level analysis essential for understanding the drivers behind the overall delivery performance.
